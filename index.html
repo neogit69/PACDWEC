@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina Tragaperras</title>
+    <script src="js/controlmaquina.js"></script>
+    <link rel="stylesheet" href="css/tragaperras.css">
+</head>
+<body>
+    <div id="ctn-principal">
+        <div id="menu">
+            
+            <!-- <button type="button" id="jugar" onclick="jugar()" disabled>Jugar</button> -->
+            <button type="button" class="btn-menu" id="insertarmonedas" >Insertar Monedas</button>
+            <!-- <button type="button" class="btn-menu" id="tb-premios">Tabla de premios</button> -->
+            <!-- <button type="button" class="btn-menu" id="tb-estadisticas"  disabled>Ver estadísticas</button>  -->
+            <button type="button" class="btn-menu" id="terminar-ronda" disabled>Terminar Ronda</button> 
+  
+        </div>
+        <div id="marcadores">
+            <table id="counters">
+                <tr>
+                    <th>CREDITO ACTUAL</td>
+                    <th>JUGADAS RONDA</td>
+                    <th>PREMIO JUGADA</td>
+                    <th>APOSTADO</td>
+                    <th>SALDO JUGADA</td>
+                </tr>
+                <tbody>
+
+                    <tr>
+                        <td><span id="credito-actual">0</span></td>
+                        <td><span id="jugadas-ronda">0</span></td>
+                        <td><span id="premio-jugada">0</span></td>
+                        <td><span id="apostado">0</span></td>
+                        <td><span id="saldo-jugada">0</span></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <th>CREDITO INICIAL</td>
+                    <th>RONDA ACTUAL</td>
+                    <th>PREMIOS TOTALES</td>
+                    <th>BONUS EXTRA</td>
+                    <th>SALDO NETO</td>
+                </tr>
+                <tbody>
+
+                    <tr>
+                        <td><span id="credito-inicial">0</span></td>
+                        <td><span id="ronda-actual">0</span></td>
+                        <td><span id="premios-totales">0</span></td>
+                        <td><span id="bonus-extra">1</span>X</td>
+                        <td><span id="saldo-neto">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <h2>Credito <span id="contador">0</span></h2>
+            <h2>Jugadas <span id="jugadas">0</span></h2>
+            <h2>Premio Obtenido <span id="premios">0</span></h2>
+            <h2>Premios acumulados <span id="premiosac">0</span></h2>
+            <h2>Ganancias <span id="ganancias">0</span></h2> -->
+        </div>
+        
+        <div id="info">
+            <h2 id="mensajes"><span id="valores"></span> </h2>
+        </div>
+
+        <div id="cnt-slots">
+            
+            <div id="slot1"class="cnt-img">
+                <img src="img/frutas/aguacate.png" alt="">
+                
+            </div>
+            <div id="slot2" class="cnt-img">
+                <img src="img/frutas/aguacate.png" alt="">
+                
+            </div>
+            <div id="slot3" class="cnt-img">
+                <img src="img/frutas/aguacate.png" alt="">
+                
+            </div>
+        </div>
+        <div id="panel">    
+            <button type="button" class="btn-juego" id="bajar-apuesta"  disabled>Bajar Apuesta</button>
+            <button type="button" class="btn-juego" id="jugar"  disabled>Jugar <span id="apuesta">1$</span></button>
+            <button type="button" class="btn-juego" id="subir-apuesta"  disabled>Subir Apuesta</button>
+        </div>
+        <div id="historico">
+            <!--aqui vendrá la tabla de resultados generada dinámicamente por javascript-->
+        </div>
+    </div>
+</body>
+</html>
